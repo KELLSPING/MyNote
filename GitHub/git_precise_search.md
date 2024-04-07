@@ -3,7 +3,7 @@
 ## Resource
 * [Search on GitHub documentation](https://docs.github.com/en/search-github)
 
-## Types of searches on GitHub
+## Searching for repositories
 
 * Search by repository name, description, or contents of the README file
   | Qualifier | Example|
@@ -35,8 +35,14 @@
   | `stars:n..n` `size:<n` | **stars:10..20 size:<1000** matches repositories 10 to 20 stars, that are smaller than 1000 KB. |
   | `stars:>=n` `fork:true` `language:LANGUAGE` | **stars:>=500 fork:true language:php** matches repositories with the at least 500 stars, including forked ones, that are written in PHP. |
 
+* Search by when a repository was created or last updated
+  | Qualifier | Example|
+  | :---- | :----------------------------------------------------------- |
+  | `created:<YYYY-MM-DD` | **webos created:<2011-01-01** matches repositories with the word "webos" that were created before 2011. |
+  | `pushed:>YYYY-MM-DD` | **css pushed:>2013-02-01** matches repositories with the word "css" that were pushed to after January 2013. |
+  | `pushed:>=YYYY-MM-DD` `fork:only` | **case pushed:>=2013-03-06 fork:only** matches repositories with the word "case" that were pushed to on or after March 6th, 2013, and that are forks. |
+
 * Search by language
   | Qualifier | Example|
   | :---- | :----------------------------------------------------------- |
   | `language:LANGUAGE` | **rails language:javascript** matches repositories with the word "rails" that are written in JavaScript. |
-
